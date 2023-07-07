@@ -50,7 +50,7 @@
                                     </div>
                                     <div class="modal-body">
 
-                                        <form name="formanggotaedit" id="formanggotaedit" action="/anggota/edit/{{ $a->id_anggota}} " method="post" enctype="multipart/form-data">
+                                        <form name="formanggotaedit" id="formanggotaedit" action="/perpus/anggota/edit/{{ $a->id_anggota}} " method="post" enctype="multipart/form-data">
                                             @csrf
                                             {{ method_field('PUT') }}
                                             <div class="form-group row">
@@ -126,7 +126,7 @@
                     <h5 class="modal-title" id="modalAnggotaTambahLabel">Form Input Data Aggota</h5>
                 </div>
                 <div class="modal-body">
-                    <form name="formanggotatambah" id="formanggotatambah" action="/anggota/tambah " method="post" enctype="multipart/form-data">
+                    <form name="formanggotatambah" id="formanggotatambah" action="/perpus/anggota/tambah " method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group row">
                             <label for="id_anggota" class="col-sm-4 col-form-label">NIM</label>

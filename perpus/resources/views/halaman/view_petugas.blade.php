@@ -46,7 +46,7 @@
                                     </div>
                                     <div class="modal-body">
 
-                                        <form name="formpetugastaedit" id="formpetugasedit" action="/petugas/edit/{{ $p->id_petugas}} " method="post" enctype="multipart/form-data">
+                                        <form name="formpetugastaedit" id="formpetugasedit" action="/perpus/petugas/edit/{{ $p->id_petugas}} " method="post" enctype="multipart/form-data">
                                             @csrf
                                             {{ method_field('PUT') }}
                                             <div class="form-group row">
@@ -104,7 +104,7 @@
                     <h5 class="modal-title" id="modalPetugasTambahLabel">Form Input Data Petugas</h5>
                 </div>
                 <div class="modal-body">
-                    <form name="formpetugastambah" id="formpetugastambah" action="/petugas/tambah " method="post" enctype="multipart/form-data">
+                    <form name="formpetugastambah" id="formpetugastambah" action="/perpus/petugas/tambah " method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group row">
                             <label for="id_petugas" class="col-sm-4 col-form-label">Nama Petugas</label>

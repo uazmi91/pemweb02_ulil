@@ -51,7 +51,7 @@
                                     </div>
                                     <div class="modal-body">
 
-                                        <form name="formbukuedit" id="formbukuedit" action="/buku/edit/{{ $bk->id_buku}} " method="post" enctype="multipart/form-data">
+                                        <form name="formbukuedit" id="formbukuedit" action="/perpus/buku/edit/{{ $bk->id_buku}} " method="post" enctype="multipart/form-data">
                                             @csrf
                                             {{ method_field('PUT') }}
                                             <div class="form-group row">
@@ -127,7 +127,7 @@
                     <h5 class="modal-title" id="modalBukuTambahLabel">Form Input Data Buku</h5>
                 </div>
                 <div class="modal-body">
-                    <form name="formbukutambah" id="formbukutambah" action="/buku/tambah " method="post" enctype="multipart/form-data">
+                    <form name="formbukutambah" id="formbukutambah" action="/perpus/buku/tambah " method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group row">
                             <label for="id_buku" class="col-sm-4 col-form-label">Kode Buku</label>

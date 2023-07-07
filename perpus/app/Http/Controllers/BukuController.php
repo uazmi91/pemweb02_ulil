@@ -35,7 +35,7 @@ class BukuController extends Controller
             'kategori' => $request->kategori
         ]);
 
-        return redirect('/buku');
+        return redirect('/perpus/buku');
     }
 
      //method untuk hapus data buku

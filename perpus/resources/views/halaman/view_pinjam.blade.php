@@ -56,7 +56,7 @@
                                     </div>
                                     <div class="modal-body">
 
-                                        <form name="formpinjamedit" id="formpinjamedit" action="/pinjam/edit/{{ $p->id_pinjam}} " method="post" enctype="multipart/form-data">
+                                        <form name="formpinjamedit" id="formpinjamedit" action="/perpus/pinjam/edit/{{ $p->id_pinjam}} " method="post" enctype="multipart/form-data">
                                             @csrf
                                             {{ method_field('PUT') }}
                                             <div class="form-group row">
@@ -155,7 +155,7 @@
                 </div>
                 <div class="modal-body">
 
-                    <form name="formpinjamtambah" id="formpinjamtambah" action="/pinjam/tambah " method="post" enctype="multipart/form-data">
+                    <form name="formpinjamtambah" id="formpinjamtambah" action="/perpus/pinjam/tambah " method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group row">
                             <label for="id_petugas" class="col-sm-4 col-form-label">Nama Petugas</label>
